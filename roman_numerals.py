@@ -14,6 +14,7 @@ roman_numerals=[
     {"arabic":4, "roman":"IV"},
     {"arabic":1, "roman":"I"},
 ]
+num = int(input("Please enter a number to covert to Roman Numeral: "))
 def to_roman(num):
     rom_num=""#empty string to return    
     for conv_data in roman_numerals:
@@ -25,6 +26,6 @@ def to_roman(num):
     #determine the remainder:
         num= num% conv_data["arabic"]
     return rom_num
+    print(rom_num)
  
- 
-print(to_roman(5774))
+#print(to_roman())
